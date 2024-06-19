@@ -1,6 +1,8 @@
 <template>
   <div>
     <NuxtRouteAnnouncer />
-    <NuxtWelcome />
+    <!-- <NuxtPage /> -->
+    <h1>app.vue</h1>
+    <Header />
   </div>
 </template>
