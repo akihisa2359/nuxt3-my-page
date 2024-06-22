@@ -1,3 +1,60 @@
-.mb-m {
-  margin-bottom: $space-m;
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
+
+$spaces: (
+  xs: $space-xs,
+  s: $space-s,
+  m: $space-m,
+  l: $space-l,
+  xl: $space-xl,
+);
+
+$directions: (
+  t: top,
+  r: right,
+  b: bottom,
+  l: left,
+  x: (
+    left,
+    right,
+  ),
+  y: (
+    top,
+    bottom,
+  ),
+);
+
+// マージン (m-*) クラス生成
+@each $key, $value in $spaces {
+  @each $dir, $prop in $directions {
+    @if $dir == x or $dir == y {
+      .m#{$dir}-#{$key} {
+        @each $p in $prop {
+          margin-#{$p}: $value;
+        }
+      }
+    } @else {
+      .m#{$dir}-#{$key} {
+        margin-#{$prop}: $value;
+      }
+    }
+  }
+}
+
+// パディング (p-*) クラス生成
+@each $key, $value in $spaces {
+  @each $dir, $prop in $directions {
+    @if $dir == x or $dir == y {
+      .p#{$dir}-#{$key} {
+        @each $p in $prop {
+          padding-#{$p}: $value;
+        }
+      }
+    } @else {
+      .p#{$dir}-#{$key} {
+        padding-#{$prop}: $value;
+      }
+    }
+  }
 }
