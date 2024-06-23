@@ -2,12 +2,12 @@
   <header>
     <nav>
       <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Skill</li>
-        <li>Career</li>
-        <li>Works</li>
-        <li>Contacts</li>
+        <li><a href="#">home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#skill">skill</a></li>
+        <li>career</li>
+        <li>works</li>
+        <li>contacts</li>
       </ul>
     </nav>
   </header>
@@ -29,5 +29,13 @@ nav {
 ul {
   display: flex;
   justify-content: space-between;
+
+  li {
+    font-size: $font-s;
+    letter-spacing: 1px;
+    @include media(sm) {
+      font-size: $font-m;
+    }
+  }
 }
 </style>

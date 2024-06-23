@@ -3,10 +3,10 @@
     <NuxtRouteAnnouncer />
     <!-- <NuxtPage /> -->
     <Header class="header" />
-    <MainVisual class="main" />
+    <MainVisual id="home" class="main" />
     <div class="contents">
-      <About />
-      <Skill />
+      <About id="about" />
+      <Skill id="skill" />
       <div style="height: 100px" />
     </div>
   </div>

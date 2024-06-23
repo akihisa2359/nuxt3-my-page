@@ -36,6 +36,6 @@ export const skills = {
   CDK: [
     "AWS CDK",
     "現在の会社で初となるIaCをTypeScriptで実現しました。",
-    "VPCの作成やCodeDeployによるECSのBlue/Greenデプロイを実装しました",
+    "VPCの作成やCodeDeployによるECSのBlue/Greenデプロイを実装しました。",
   ].join("\n"),
 };

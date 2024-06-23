@@ -1,12 +1,15 @@
 <template>
-  <Transition>
-    <Generals-Modal v-if="selectedSkill" @close="() => (selectedSkill = null)">
-      <div class="skill-modal">
-        {{ selectedSkillDetail }}
-      </div>
-    </Generals-Modal>
-  </Transition>
   <section>
+    <Transition>
+      <Generals-Modal
+        v-if="selectedSkill"
+        @close="() => (selectedSkill = null)"
+      >
+        <div class="skill-modal">
+          {{ selectedSkillDetail }}
+        </div>
+      </Generals-Modal>
+    </Transition>
     <div class="container">
       <h2>skill</h2>
       <div
