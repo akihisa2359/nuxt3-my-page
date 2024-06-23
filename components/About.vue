@@ -4,7 +4,7 @@
       <h2 class="title">about</h2>
       <div class="description">
         <p class="mb-m">
-          大阪出身のwebエンジニア。
+          大阪府出身、東京都在住のwebエンジニア。
           大学では英語の教師になるために教職課程に進み留学を経験するも、ITの技術に惹かれ新卒としてSIerに就職。
         </p>
         <p>
@@ -29,6 +29,7 @@ section {
 
     .description {
       line-height: 32px;
+      letter-spacing: 2px;
     }
   }
 }
@@ -36,5 +37,6 @@ section {
   letter-spacing: 12px;
   margin-bottom: 80px;
   text-align: center;
+  color: #96bdb9;
 }
 </style>
