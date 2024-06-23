@@ -6,7 +6,6 @@
       </div>
     </Generals-Modal>
   </Transition>
-  <!-- <button @click="() => (isVisible = true)">show</button> -->
   <section>
     <div class="container">
       <h2>skill</h2>
@@ -44,7 +43,6 @@
 
 <script setup>
 import { skills as skillDetails } from "/libs/constants.js";
-const isVisible = ref(false);
 
 const selectedSkill = ref(null);
 const selectedSkillDetail = computed(() => skillDetails[selectedSkill.value]);
