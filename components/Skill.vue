@@ -37,8 +37,6 @@
       </div>
     </div>
   </section>
-  {{ selectedSkillDetail }}
-  <div style="height: 500px" />
 </template>
 
 <script setup>

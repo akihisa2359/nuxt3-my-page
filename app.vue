@@ -7,6 +7,7 @@
     <div class="contents">
       <About />
       <Skill />
+      <div style="height: 100px" />
     </div>
   </div>
 </template>
@@ -28,6 +29,5 @@
   background: white;
   position: relative;
   top: 100vh;
-  // z-index: 1;
 }
 </style>
