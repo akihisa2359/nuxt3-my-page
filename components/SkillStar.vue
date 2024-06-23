@@ -22,7 +22,7 @@ const props = defineProps({
   score: { default: 0 },
 });
 const style = computed(() => ({
-  width: `${props.score * 24}px`,
+  width: `${props.score * 20}px`,
 }));
 </script>
 

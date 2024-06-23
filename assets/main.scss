@@ -2,6 +2,11 @@
 // @tailwind components;
 // @tailwind utilities;
 
+// モーダル表示時に背後をスクロールできないようにする
+body.modal-open {
+  overflow: hidden;
+}
+
 $spaces: (
   xs: $space-xs,
   s: $space-s,
