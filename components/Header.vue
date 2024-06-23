@@ -6,7 +6,7 @@
         <li><a href="#about">about</a></li>
         <li><a href="#skill">skill</a></li>
         <li>career</li>
-        <li>works</li>
+        <li><a href="#works">works</a></li>
         <li>contacts</li>
       </ul>
     </nav>

@@ -90,14 +90,14 @@ const skills = {
 }
 
 section {
-  display: flex;
-  justify-content: center;
-  padding: 0 32px;
-  font-size: 14px;
+  font-size: $font-m;
+  margin-bottom: 40px;
 
   .container {
     width: 100%;
+    margin: 0 auto;
     max-width: $width-sm;
+    padding: 0 32px;
     background-color: white;
 
     h2 {

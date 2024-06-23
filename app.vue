@@ -7,6 +7,7 @@
     <div class="contents">
       <About id="about" />
       <Skill id="skill" />
+      <Works id="works" />
       <div style="height: 100px" />
     </div>
   </div>
