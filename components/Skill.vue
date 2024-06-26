@@ -51,17 +51,17 @@ const selectedSkillDetail = computed(() => skillDetails[selectedSkill.value]);
 const skills = {
   frontend: {
     "HTML/CSS/JS": 4,
-    "Vue/Nuxt": 4,
+    "Vue/Nuxt": 3.5,
     "React/Next": 3,
     TypeScript: 2.5,
   },
   backend: {
-    "Ruby/Rails": 4,
-    "Node.js": 4,
+    "Ruby/Rails": 3.5,
+    "Node.js": 3.5,
     Python: 3.5,
   },
   infra: {
-    AWS: 3.5,
+    AWS: 3.0,
     Docker: 3.5,
     Git: 4,
     CDK: 3,

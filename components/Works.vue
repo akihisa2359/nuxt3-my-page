@@ -64,9 +64,17 @@ h2 {
       font-size: $font-m;
       letter-spacing: 2px;
       margin-bottom: 8px;
+      margin-left: 4px;
+      @include media(sm) {
+        margin-left: 0px;
+      }
     }
     span.info {
       font-size: $font-xs;
+      margin-left: 4px;
+      @include media(sm) {
+        margin-left: 0px;
+      }
     }
     .work {
       width: 100%;
