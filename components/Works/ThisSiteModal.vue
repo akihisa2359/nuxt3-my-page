@@ -3,29 +3,36 @@
     <Generals-Modal v-if="isVisible" @close="emit('close')">
       <div class="content">
         <template v-if="work === 'work1'">
-          <h3 class="title">当サイトです。</h3>
+          <h3 class="title">
+            当サイトです。<a
+              class="link"
+              :href="workSrcs.work1.github"
+              target="_blank"
+              >github<Icon class="open-icon">open_in_new</Icon></a
+            >
+          </h3>
           <p class="comment">
             スペースを大きめにとり、メインビジュアルのゆったりした雰囲気に沿うように意識しました。
           </p>
           <p class="comment">制作期間：2日（20h）</p>
           <div class="iframe-wrapper">
-            <iframe :src="workSrcs[work]" class="iframe-preview" />
+            <iframe :src="workSrcs.work1" class="iframe-preview" />
           </div>
         </template>
         <template v-if="work === 'work2'">
           <h3 class="title">
-            <a :href="workSrcs[work]" target="_blank"
-              ><span class="link"
-                >todoアプリ<Icon class="open-icon">open_in_new</Icon></span
-              ></a
-            >です。
+            <a class="link" :href="workSrcs.work2" target="_blank"
+              >todoアプリ<Icon class="open-icon">open_in_new</Icon></a
+            >です。<a class="link" :href="workSrcs.work1.github" target="_blank"
+              >github<Icon class="open-icon">open_in_new</Icon></a
+            >
           </h3>
           <p class="comment">
             Next.jsで0から実装したことがなかったため、学習のために作成しました。<br />
           </p>
           <p class="comment">制作期間：3日（22h）</p>
           <div class="iframe-wrapper">
-            <iframe :src="workSrcs[work]" class="iframe-preview" />
+            <iframe :src="workSrcs.work2" class="iframe-preview" />
           </div>
         </template>
       </div>
@@ -40,8 +47,14 @@ const props = defineProps({
 });
 
 const workSrcs = {
-  work1: "https://maki-nuxt-page.vercel.app/",
-  work2: "https://maki-next-todo.vercel.app/",
+  work1: {
+    link: "https://maki-nuxt-page.vercel.app/",
+    github: "https://github.com/akihisa2359/Next-todo",
+  },
+  work2: {
+    link: "https://maki-next-todo.vercel.app/",
+    github: "https://github.com/akihisa2359/nuxt3-my-page",
+  },
 };
 const isVisible = computed(() => {
   return props.work !== null;
