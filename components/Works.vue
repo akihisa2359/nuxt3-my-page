@@ -20,12 +20,12 @@
       </div>
     </div>
 
-    <ThisSiteModal :work="selectedWork" @close="selectedWork = null" />
+    <WorksDetailModal :work="selectedWork" @close="selectedWork = null" />
   </section>
 </template>
 
 <script setup>
-import ThisSiteModal from "/components/Works/ThisSiteModal.vue";
+// import ThisSiteModal from "/components/Works/ThisSiteModal.vue";
 
 const selectedWork = ref(null);
 </script>

@@ -1,17 +1,17 @@
 <template>
   <div class="star-container">
     <div class="star-rating">
-      <Icon style="color: #ffd900" :fill="0">star</Icon>
-      <Icon style="color: #ffd900" :fill="0">star</Icon>
-      <Icon style="color: #ffd900" :fill="0">star</Icon>
-      <Icon style="color: #ffd900" :fill="0">star</Icon>
-      <Icon style="color: #ffd900" :fill="0">star</Icon>
+      <GeneralsIcon style="color: #ffd900" :fill="0">star</GeneralsIcon>
+      <GeneralsIcon style="color: #ffd900" :fill="0">star</GeneralsIcon>
+      <GeneralsIcon style="color: #ffd900" :fill="0">star</GeneralsIcon>
+      <GeneralsIcon style="color: #ffd900" :fill="0">star</GeneralsIcon>
+      <GeneralsIcon style="color: #ffd900" :fill="0">star</GeneralsIcon>
       <div class="star-rating-front" :style="style">
-        <Icon style="color: #ffd900" :fill="1">star</Icon>
-        <Icon style="color: #ffd900" :fill="1">star</Icon>
-        <Icon style="color: #ffd900" :fill="1">star</Icon>
-        <Icon style="color: #ffd900" :fill="1">star</Icon>
-        <Icon style="color: #ffd900" :fill="1">star</Icon>
+        <GeneralsIcon style="color: #ffd900" :fill="1">star</GeneralsIcon>
+        <GeneralsIcon style="color: #ffd900" :fill="1">star</GeneralsIcon>
+        <GeneralsIcon style="color: #ffd900" :fill="1">star</GeneralsIcon>
+        <GeneralsIcon style="color: #ffd900" :fill="1">star</GeneralsIcon>
+        <GeneralsIcon style="color: #ffd900" :fill="1">star</GeneralsIcon>
       </div>
     </div>
   </div>

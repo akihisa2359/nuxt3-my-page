@@ -8,7 +8,9 @@
               class="link"
               :href="workSrcs.work1.github"
               target="_blank"
-              >github<Icon class="open-icon">open_in_new</Icon></a
+              >github<GeneralsIcon class="open-icon"
+                >open_in_new</GeneralsIcon
+              ></a
             >
           </h3>
           <p class="comment">
@@ -16,15 +18,19 @@
           </p>
           <p class="comment">制作期間：2日（20h）</p>
           <div class="iframe-wrapper">
-            <iframe :src="workSrcs.work1" class="iframe-preview" />
+            <iframe :src="workSrcs.work1.link" class="iframe-preview" />
           </div>
         </template>
         <template v-if="work === 'work2'">
           <h3 class="title">
-            <a class="link" :href="workSrcs.work2" target="_blank"
-              >todoアプリ<Icon class="open-icon">open_in_new</Icon></a
-            >です。<a class="link" :href="workSrcs.work1.github" target="_blank"
-              >github<Icon class="open-icon">open_in_new</Icon></a
+            <a class="link" :href="workSrcs.work2.link" target="_blank"
+              >todoアプリ<GeneralsIcon class="open-icon"
+                >open_in_new</GeneralsIcon
+              ></a
+            >です。<a class="link" :href="workSrcs.work2.github" target="_blank"
+              >github<GeneralsIcon class="open-icon"
+                >open_in_new</GeneralsIcon
+              ></a
             >
           </h3>
           <p class="comment">
@@ -32,7 +38,7 @@
           </p>
           <p class="comment">制作期間：3日（22h）</p>
           <div class="iframe-wrapper">
-            <iframe :src="workSrcs.work2" class="iframe-preview" />
+            <iframe :src="workSrcs.work2.link" class="iframe-preview" />
           </div>
         </template>
       </div>
@@ -77,7 +83,7 @@ const isVisible = computed(() => {
   color: #777;
   padding: 24px;
   height: 50vh;
-  width: 80vw;
+  width: 90vw;
   @include media(sm) {
     height: 70vh;
     width: 50vw;

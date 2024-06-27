@@ -22,7 +22,8 @@
         <div class="skills">
           <div v-for="(score, skill) in categorizedSkills" class="skill">
             <div @click="selectedSkill = skill">
-              {{ skill }}<Icon class="ml-s detail-icon">Add</Icon>
+              {{ skill
+              }}<GeneralsIcon class="ml-s detail-icon">Add</GeneralsIcon>
             </div>
             <SkillStar :score="score" />
           </div>
@@ -50,14 +51,14 @@ const selectedSkillDetail = computed(() => skillDetails[selectedSkill.value]);
 
 const skills = {
   frontend: {
-    "HTML/CSS/JS": 4,
+    "HTML/CSS/JS": 3.5,
     "Vue/Nuxt": 3.5,
     "React/Next": 3,
     TypeScript: 2.5,
   },
   backend: {
     "Ruby/Rails": 3.5,
-    "Node.js": 3.5,
+    "Node.js": 3.0,
     Python: 3.5,
   },
   infra: {
@@ -81,7 +82,8 @@ const skills = {
 }
 
 .skill-modal {
-  width: 200px;
+  width: 100vw;
+  max-width: 400px;
   height: 200px;
   padding: 24px;
   font-size: $font-s;

@@ -34,28 +34,18 @@
     text-align: center;
     letter-spacing: 5px;
     text-shadow: #bbb 2px 3px;
-    // @apply md:text-xs;
 
     .content {
       width: 100%;
 
       .name {
-        font-family: "Pacifico";
-        font-size: 32px;
+        // font-family: "Pacifico";
+        font-size: 24px;
         margin-bottom: 16px;
-
-        @include media(sm) {
-          font-size: 48px;
-          margin-bottom: 8px;
-        }
       }
 
       .description {
         font-size: 16px;
-
-        @include media(sm) {
-          font-size: 32px;
-        }
       }
     }
   }
