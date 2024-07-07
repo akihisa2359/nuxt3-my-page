@@ -41,6 +41,32 @@
             <iframe :src="workSrcs.work2.link" class="iframe-preview" />
           </div>
         </template>
+        <template v-if="work === 'work3'">
+          <h3 class="title">
+            <a class="link" :href="workSrcs[work].link" target="_blank"
+              >LINEログインのデモ<GeneralsIcon class="open-icon"
+                >open_in_new</GeneralsIcon
+              ></a
+            >です。<a class="link" :href="workSrcs[work].github" target="_blank"
+              >github<GeneralsIcon class="open-icon"
+                >open_in_new</GeneralsIcon
+              ></a
+            >
+          </h3>
+          <p class="comment">
+            Nuxt.jsでLINEログインの機能を実装しました。
+            サーバーにはNuxt.jsのサーバーAPIを利用しています。
+          </p>
+          <p class="comment">制作期間：2日（16h）</p>
+          <p class="comment">
+            所感：<br />
+            cookieやトークンを扱うに当たってサーバーとクライアントの使い分けに配慮しました。<br />
+            その分、それを実現するためのNuxt.jsでの実装に苦戦しました。
+          </p>
+          <!-- <div class="iframe-wrapper">
+            <iframe :src="workSrcs[work].link" class="iframe-preview" />
+          </div> -->
+        </template>
       </div>
     </Generals-Modal>
   </Transition>
@@ -60,6 +86,10 @@ const workSrcs = {
   work2: {
     link: "https://maki-next-todo.vercel.app/",
     github: "https://github.com/akihisa2359/nuxt3-my-page",
+  },
+  work3: {
+    link: "https://maki-line-login-demo.vercel.app/",
+    github: "https://github.com/akihisa2359/line-login-demo",
   },
 };
 const isVisible = computed(() => {

@@ -17,6 +17,13 @@
           </div>
           <span class="info">タップでモーダルが開きます</span>
         </div>
+        <div class="work-wrapper">
+          <h3 class="title">line-login (Developed using Nuxt.js)</h3>
+          <div class="work" @click="selectedWork = 'work3'">
+            <img src="/public/work3.png" />
+          </div>
+          <span class="info">タップでモーダルが開きます</span>
+        </div>
       </div>
     </div>
 
