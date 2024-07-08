@@ -63,9 +63,12 @@
             cookieやトークンを扱うに当たってサーバーとクライアントの使い分けに配慮しました。<br />
             その分、それを実現するためのNuxt.jsでの実装に苦戦しました。
           </p>
-          <!-- <div class="iframe-wrapper">
-            <iframe :src="workSrcs[work].link" class="iframe-preview" />
-          </div> -->
+          <div style="text-align: center">
+            <img
+              src="/public/work3.gif"
+              style="width: 300px; overflow-y: hidden"
+            />
+          </div>
         </template>
       </div>
     </Generals-Modal>
@@ -114,6 +117,7 @@ const isVisible = computed(() => {
   padding: 24px;
   height: 50vh;
   width: 90vw;
+  overflow-y: auto;
   @include media(sm) {
     height: 70vh;
     width: 50vw;
